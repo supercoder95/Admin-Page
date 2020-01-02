@@ -150,6 +150,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="list-group mt-3">
+                            <a href="#" class="list-group-item active">방문자 지수</a>
+                            <div class="list-group-item">
+                                <canvas id="lineChart"></canvas>
+                            </div>
+                        </div>
                     </div>        
                 </div>
             </div>
@@ -162,6 +168,46 @@
         <script src="E:\GitPre\Admin Page\js\popper.min.js"></script>
         <!-- bootstrap js추가하기 -->
         <script src="E:\GitPre\Admin Page\js\bootstrap.min.js"></script>
-       
+        <!-- MDB js 추가하기 -->
+        <script src="E:\GitPre\Admin Page\js\mdb.min.js"></script>
+        <!-- MDB chart 추가 -->
+        <script>
+        //line
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+        type: 'line',
+        data: {
+        labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월"],
+        datasets: [{
+        label: "유입 방문자",
+        data: [650, 590, 800, 810, 560, 550, 4000],
+        backgroundColor: [
+        'rgba(105, 0, 132, .2)',
+        ],
+        borderColor: [
+        'rgba(200, 99, 132, .7)',
+        ],
+        borderWidth: 2
+        },
+        {
+        label: "무효 방문자",
+        data: [280, 480, 400, 190, 186, 127, 190],
+        backgroundColor: [
+        'rgba(0, 137, 132, .2)',
+        ],
+        borderColor: [
+        'rgba(0, 10, 130, .7)',
+        ],
+        borderWidth: 2
+        }
+        ]
+        },
+        options: {
+        responsive: true
+        }
+        });
+        </script>
+
+
     </body>
 </html>

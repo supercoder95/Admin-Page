@@ -19,15 +19,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbar">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="./index.html">대시보드</a>
+                    <a class="nav-item nav-link" href="./index.html">대시보드</a>
                     <a class="nav-item nav-link" href="./event.html">이벤트</a>
                     <a class="nav-item nav-link" href="./blog.html">블로그</a>
                     <a class="nav-item nav-link" href="./user.html">회원</a>
                 </div>
                 <div class="navbar-nav mr-sm-2">
-                    <a class="nav-item nav-link active" href="./userLogin.html">로그인</a>
+                    <a class="nav-item nav-link" href="./userLogin.html">로그인</a>
                     <a class="nav-item nav-link" href="./userLogout.html">로그아웃</a>
-                    <a class="nav-item nav-link" href="./userEdit.html">관리자 정보 수정</a>
+                    <a class="nav-item nav-link active" href="./userEdit.html">관리자 정보 수정</a>
                 </div>
             </div>
         </nav>
@@ -48,7 +48,7 @@
                             관리목록
                             </button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item active" href="./index.html">대시보드</a>
+                                <a class="dropdown-item" href="./index.html">대시보드</a>
                                 <a class="dropdown-item" href="./evnet.html">이벤트 관리</a>
                                 <a class="dropdown-item" href="./blog.html">블로그 관리</a>
                                 <a class="dropdown-item" href="./user.html">회원 관리</a>
@@ -61,7 +61,7 @@
 
         <div class="container">
             <ol class="breadcrumb">
-                <li class="active">대시보드에서의 모든 작업은 데이터베이스에 기록됩니다.</li>
+                <li class="active">관리자 정보를 수정한 이후에 즉시 반영됩니다.</li>
             </ol>
         </div>
 
@@ -70,7 +70,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="list-group">
-                            <a href="/index.html" class="list-group-item active">대시보드
+                            <a href="/index.html" class="list-group-item">대시보드
                                 <span class="badge badge-secondary alert-warning">3</span></a>
                             <a href="/event.html" class="list-group-item">이벤트 관리
                                 <span class="badge badge-secondary alert-warning">25</span></a>
@@ -123,40 +123,58 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                     <div class="col-md-9">
-                        <a href="./index.html" class="list-group-item active">관리 페이지 둘러보기</a>
-                        <div class="list-group-item">
-                            <div class="row m-1">
-                                <div class="col-md-3 text-center bg-light p-5">
-                                    <img src="E:\GitPre\Admin Page\icon\bell.svg">
-                                    <h3>205</h3>
-                                    <h5>이벤트</h5>
-                                </div>
-                                <div class="col-md-3 text-center bg-light p-5">
-                                    <img src="E:\GitPre\Admin Page\icon\edit.svg">
-                                    <h3>205</h3>
-                                    <h5>블로그</h5>
-                                </div>
-                                <div class="col-md-3 text-center bg-light p-5">
-                                    <img src="E:\GitPre\Admin Page\icon\user.svg">
-                                    <h3>103203</h3>
-                                    <h5>유저</h5>
-                                </div>
-                                <div class="col-md-3 text-center bg-light p-5">
-                                    <img src="E:\GitPre\Admin Page\icon\bar-chart.svg">
-                                    <h3>1442302</h3>
-                                    <h5>방문자</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group mt-3">
-                            <a href="#" class="list-group-item active">방문자 지수</a>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">관리자 정보 수정</a>
                             <div class="list-group-item">
-                                <canvas id="lineChart"></canvas>
+                                <form>
+                                    <div class="form-group">
+                                        <label>아이디</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>비밀번호</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>비밀번호 확인</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>연락처</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>성별</label>
+                                        <select class="form-control">
+                                            <option selected>남성</option>
+                                            <option selected>여성</option>
+                                        </select>
+                                    </div>
+                                        <div class="form-group">
+                                            <label>이메일</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-2">
+                                                <label>도</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>시/군/읍</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-7">
+                                                <label>상세주소</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">수정하기</button>
+                                </form>
                             </div>
                         </div>
-                    </div>        
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,44 +190,6 @@
         <script src="E:\GitPre\Admin Page\js\bootstrap.min.js"></script>
         <!-- MDB js 추가하기 -->
         <script src="E:\GitPre\Admin Page\js\mdb.min.js"></script>
-        <!-- MDB chart 추가 -->
-        <script>
-        //line
-        var ctxL = document.getElementById("lineChart").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-        type: 'line',
-        data: {
-        labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월"],
-        datasets: [{
-        label: "유입 방문자",
-        data: [650, 590, 800, 810, 560, 550, 4000],
-        backgroundColor: [
-        'rgba(105, 0, 132, .2)',
-        ],
-        borderColor: [
-        'rgba(200, 99, 132, .7)',
-        ],
-        borderWidth: 2
-        },
-        {
-        label: "무효 방문자",
-        data: [280, 480, 400, 190, 186, 127, 190],
-        backgroundColor: [
-        'rgba(0, 137, 132, .2)',
-        ],
-        borderColor: [
-        'rgba(0, 10, 130, .7)',
-        ],
-        borderWidth: 2
-        }
-        ]
-        },
-        options: {
-        responsive: true
-        }
-        });
-        </script>
-
 
     </body>
 </html>

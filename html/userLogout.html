@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>관리자 페이지</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- 부트스트랩 css 추가하기 -->
+        <link rel="stylesheet" href="E:\GitPre\Admin Page\css\bootstrap.min.css">
+        <!-- custom css 추가 영역 -->
+        <link rel="stylesheet" href="E:\GitPre\Admin Page\css\custom.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="./index.html">관리자 페이지</a>
+            <button class="navbar-toggler" type="button" data-toggle="colllapse" 
+            data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="./index.html">대시보드</a>
+                    <a class="nav-item nav-link" href="./event.html">이벤트</a>
+                    <a class="nav-item nav-link" href="./blog.html">블로그</a>
+                    <a class="nav-item nav-link" href="./user.html">회원</a>
+                </div>
+                <div class="navbar-nav mr-sm-2">
+                    <a class="nav-item nav-link" href="./userLogin.html">로그인</a>
+                    <a class="nav-item nav-link active" href="./userLogout.html">로그아웃</a>
+                    <a class="nav-item nav-link" href="./userEdit.html">관리자 정보 수정</a>
+                </div>
+            </div>
+        </nav>
+        <header id="header">
+            <div class="container p-3 bg-dark text-white">
+                <div class="row">
+                    <div class="col-sm-9 info">
+                        <h4>
+                            <img src="E:\GitPre\Admin Page\icon\settings.svg">
+                            로그아웃 
+                            <small>에 성공했습니다.</small>
+                        </h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="btn-group float-right">
+                            <button type="button" class="btn btn-primary dropdown-toggle" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            관리목록
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./index.html">대시보드</a>
+                                <a class="dropdown-item" href="./evnet.html">이벤트 관리</a>
+                                <a class="dropdown-item" href="./blog.html">블로그 관리</a>
+                                <a class="dropdown-item" href="./user.html">회원 관리</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">다시 접속하시려면 로그인 페이지로 이동하세요.</li>
+            </ol>
+        </div>
+
+        <section id="main">
+            <div class="container">
+                <a href="userLogin.html" class="btn btn-primary">로그인 페이지로 이동하기</a>
+            </div>
+        </section>
+        
+        <footer class="bg-dark mt-4 p-5 text-center" style="color: #ffffff;">
+            CopyRight &copy; 2020 오규찬 All Right Reserved.
+        </footer>
+
+        <!-- jquery js추가하기 -->
+        <script src="E:\GitPre\Admin Page\js\jquery-3.4.1.min.js"></script>
+        <!-- popper js추가하기 -->
+        <script src="E:\GitPre\Admin Page\js\popper.min.js"></script>
+        <!-- bootstrap js추가하기 -->
+        <script src="E:\GitPre\Admin Page\js\bootstrap.min.js"></script>
+        <!-- MDB js 추가하기 -->
+        <script src="E:\GitPre\Admin Page\js\mdb.min.js"></script>
+
+    </body>
+</html>

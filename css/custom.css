@@ -33,3 +33,18 @@ body{
 .dropdown-toggle::after {
     content: none;
 }
+
+@media (max-width: 960px){
+    .mobile {
+        display: none;
+    }
+}
+
+.modal {
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    margin: 0 auto;
+    height: 720px;
+}

@@ -20,8 +20,8 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbar">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="./index.html">대시보드</a>
-                    <a class="nav-item nav-link active" href="./event.html">이벤트</a>
-                    <a class="nav-item nav-link" href="./blog.html">블로그</a>
+                    <a class="nav-item nav-link" href="./event.html">이벤트</a>
+                    <a class="nav-item nav-link active" href="./blog.html">블로그</a>
                     <a class="nav-item nav-link" href="./user.html">회원</a>
                 </div>
                 <div class="navbar-nav mr-sm-2">
@@ -36,8 +36,8 @@
                 <div class="row">
                     <div class="col-sm-9 info">
                         <h4>
-                            <img src="E:\GitPre\Admin Page\icon\bell_small.svg">
-                            대시보드 
+                            <img src="E:\GitPre\Admin Page\icon\edit_small.svg">
+                            블로그 
                             <small>페이지를 관리하세요</small>
                         </h4>
                     </div>
@@ -49,8 +49,8 @@
                             </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="./index.html">대시보드</a>
-                                <a class="dropdown-item active" href="./evnet.html">이벤트 관리</a>
-                                <a class="dropdown-item" href="./blog.html">블로그 관리</a>
+                                <a class="dropdown-item" href="./evnet.html">이벤트 관리</a>
+                                <a class="dropdown-item active" href="./blog.html">블로그 관리</a>
                                 <a class="dropdown-item" href="./user.html">회원 관리</a>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
 
         <div class="container">
             <ol class="breadcrumb">
-                <li class="active">웹 사이트에 존재하는 이벤트를 관리하세요.</li>
+                <li class="active">블로그 내 포스트를 관리하세요.</li>
             </ol>
         </div>
 
@@ -72,10 +72,10 @@
                         <div class="list-group">
                             <a href="/index.html" class="list-group-item">대시보드
                                 <span class="badge badge-secondary alert-warning">3</span></a>
-                            <a href="/event.html" class="list-group-item active">이벤트 관리
+                            <a href="/event.html" class="list-group-item">이벤트 관리
+                                <span class="badge badge-secondary alert-warning">25</span></a>
+                            <a href="/blog.html" class="list-group-item warin active">블로그 관리
                                 <span class="badge badge-secondary alert-warning"></span></a>
-                            <a href="/blog.html" class="list-group-item warin">블로그 관리
-                                <span class="badge badge-secondary alert-warning">15</span></a>
                             <a href="/user.html" class="list-group-item">회원 관리
                                 <span class="badge badge-secondary alert-warning">7</span></a>
                         </div>
@@ -125,47 +125,51 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <a href="./index.html" class="list-group-item">이벤트 목록</a>
+                        <a href="./index.html" class="list-group-item">최신 포스팅</a>
                         <div class="list-group-item">
-                            <div class="list-group-item">
-                                <div class="list-group">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th class="mobile" style="width: 60px; text-align: center;">번호</th>
-                                                <th class="mobile" style="text-align: center;">제목</th>
-                                                <th class="mobile"  style="width: 80px; text-align: center;">작성자</th>
-                                                <th class="mobile" style="width: 120px; text-align: center;">작성일</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="mobile" style="text-align: center;">3</td>
-                                                <td style="text-align: center;">종합소득세 20% 할인 이벤트입니다.</td>
-                                                <td class="mobile" style="text-align: center;">운영자</td>
-                                                <td class="mobile" style="text-align: center;">2020-01-23</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="mobile" style="text-align: center;">2</td>
-                                                <td style="text-align: center;">신규 회원 포인트 적립 이벤트가 시작됩니다.</td>
-                                                <td class="mobile" style="text-align: center;">운영자</td>
-                                                <td class="mobile" style="text-align: center;">2020-01-21</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="mobile" style="text-align: center;">1</td>
-                                                <td style="text-align: center;">아드레날린 바이오스 업데이트가 필요합니다.</td>
-                                                <td class="mobile" style="text-align: center;">운영자</td>
-                                                <td class="mobile" style="text-align: center;">2020-01-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <button class="btn btn-success" data-toggle="modal" data-target="#modal">
-                                                        이벤트 추가
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                           <div class="list-group">
+                               <div class="list-group">
+                                   <a href="#" class="list-group-item list-group-item-action flex-column
+                                   align-items-start active">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">
+                                                Net Framwork 3.5 문제 해결하는 방법
+                                            </h5>
+                                            <small style="width: 120px; text-align: right;">
+                                            1일 전
+                                            </small>
+                                        </div>
+                                        <p class="mb-1">자극을 통해 성장해라.</p>
+                                        <small>좋아요 365개</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action flex-column
+                                                                       align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">
+                                                성장하고 또 성장해라.
+                                            </h5>
+                                            <small style="width: 120px; text-align: right;">
+                                                1일 전
+                                            </small>
+                                        </div>
+                                        <p class="mb-1">오로지 연습과 공부 반복만이 성장이다.</p>
+                                        <small>좋아요 365개</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action flex-column
+                                                                       align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">
+                                               다른 이들은 너보다 열걸음 더 앞서있다.
+                                            </h5>
+                                            <small style="width: 120px; text-align: right;">
+                                                1일 전
+                                            </small>
+                                        </div>
+                                        <p class="mb-1">자극을 통해 성장해라.</p>
+                                        <small>좋아요 365개</small>
+                                    </a>
+                               </div>
+                           </div>
                         </div>
                         <div class="list-group mt-3">
                             <a href="#" class="list-group-item">이벤트 참여 연령대 지수</a>
